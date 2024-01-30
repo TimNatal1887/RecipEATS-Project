@@ -1,7 +1,17 @@
-import React from "react";
+import React, { useState,useEffect } from "react";
+import "./App.css"
+
 
 const App = () => {
-  return <div>Basic Pursuit React Starter</div>;
+
+
+
+
+  return (
+  <div className="body">
+    Basic Pursuit React Starter
+  </div>
+  )
 };
 
 export default App;
