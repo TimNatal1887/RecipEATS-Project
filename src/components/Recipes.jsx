@@ -18,6 +18,7 @@ export default function Recipes(){
             </div>
             <h2>All Recipes</h2>
             <ul>
+                {recipes.map(recipe => <Recipe/>)}
             {/* This will be where we list the recipes */}
             </ul>
         </div>
