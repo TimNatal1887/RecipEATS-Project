@@ -19,7 +19,7 @@ Who's ready to indulge in their favorite recipes? Our "Heaven Seven" team -- Hai
 - Netlify.com frontend deployment
 - Self learning & ChatGPT
 
-# ~TABLE OF CONTENTS~  
+# TABLE OF CONTENTS  
 - Features
 - Installation
 - Components
@@ -28,8 +28,11 @@ Who's ready to indulge in their favorite recipes? Our "Heaven Seven" team -- Hai
 
 # Features
 -Our `landing page` is a winner. It's simple, but the complex, carousel of visuals almost make it edible. One bite, and you're hooked into our world of recipes. It also has an `About Us` link, connecting the user to us -- the team that built this app.
+
 -Functionality immediately by clicking the imagery, navigating to recipes.
+
 -A unique `search bar` that defines the phrase 'dietary bliss by omission'.
+
 -Besides the incredible recipes, the `reviews` section allows the user to best steer the next avid recipe-er towards recipes aligned with their needs.
 
 ## Installation
@@ -69,10 +72,11 @@ The `ReviewsForm` holds a separate file for each fetch. For the two functions, a
 
 #### Bonus Items
 Stretch Goals:
--
+-A fun option to invite a user, enabling them on our site/app to input their own recipes, according to the same object structure of our `recipes` data-point.
 
-##### Contributing
-Contributions are welcome! To contribute to our 'recipEATS! Project', follow these simple steps below:
+#### Contributing
+Contributions: 
+You are welcome to contribute to our 'recipEATS! Project', follow these simple steps below:
 
 **Fork the repository**
 Create a new branch: git checkout -b 'feature/new-feature'
@@ -146,15 +150,16 @@ After deploying (*frontend* + *backend*), ensure to test your app thoroughly.
 #### Visual Examples
 The following is an example of our application during the process w/these images showing the application completed at different stages of the project. Images highlight different stages of us tackling this recipEATS! project.
 WIREFRAMES (desktop and mobile)
-![Landing-desktop](<src/public/Screenshot 2024-02-01 at 10.51.48 PM.png>)
 
-![Home-desktop](<src/public/Screenshot 2024-02-01 at 11.07.59 PM.png>)
+<img src="https://res.cloudinary.com/dgifdj6nx/image/upload/v1706898185/Screenshot_2024-02-01_at_10.51.48_PM_mm2kee.png" alt="Landing-desktop" width="400" height="400">
 
-![recipes-desktop](<src/public/Screenshot 2024-02-01 at 11.17.43 PM.png>)
+<img src="https://res.cloudinary.com/dgifdj6nx/image/upload/v1706898357/Screenshot_2024-02-01_at_11.07.59_PM_puco3c.png" alt="Home-desktop" width="400" height="400">
 
-![Landing-mobile](<src/public/Screenshot 2024-02-01 at 11.11.40 PM.png>)
+<img src="https://res.cloudinary.com/dgifdj6nx/image/upload/v1706898525/Screenshot_2024-02-01_at_11.17.43_PM_jbjwbj.png" alt="recipes-desktop" width="400" height="400">
 
-![recipes-mobile](<src/public/Screenshot 2024-02-01 at 11.14.11 PM.png>)
+<img src="https://res.cloudinary.com/dgifdj6nx/image/upload/v1706898640/Screenshot_2024-02-01_at_11.11.40_PM_bucmaq.png" alt="Landing-mobile" width="400" height="400">
+
+<img src="https://res.cloudinary.com/dgifdj6nx/image/upload/v1706898715/Screenshot_2024-02-01_at_11.14.11_PM_jlchzk.png" alt="recipes-mobile" width="400" height="400">
 
 recipEATS! Landing Page! (visuals)
 
@@ -163,10 +168,13 @@ recipEATS! Landing Page! (visuals)
 
 Tim Natal: ""
 (https://github.com/TimNatal1887)
+
 Haiyah Perez: ""
 (https://github.com/haiyahperez)
+
 Lenny Lopez: ""
 ()
+
 Marlon Regis: "In a different space, my 'name' is one of the dishes in our recipe app!"
 (https://github.com/MarlonPelau)
 
