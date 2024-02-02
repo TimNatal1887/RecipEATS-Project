@@ -2,7 +2,7 @@
 
 <img src="https://res.cloudinary.com/dgifdj6nx/image/upload/t_Gradient fade/v1706806166/recipEATS-LandingPage1_d6ojpf.avif" alt="recipEATS!" width="400" height="400">
 
-Who's ready to indulge in their favorite recipes? Our "Heaven Seven" team -- Haiyah, Tim, Marlon & Lenny -- have accepted the challenge. We created an application using ReactJS to enable any picky eater to filter out those ingredients that just doesn't fit into their diet, but still enjoy a variety of the most fabulous handpicked recipes, over and over again! Hence our name, *recipEATS!* Our landing page invites you to bite in, then explore the various recipes we offer. However, to gain our trust, use our special search bar that eliminates the ingredients you have to avoid, yet allows you to zero-in on that dish's recipe, worry-free. The four of us worked closely together, practicing and using the below **Project Tools & Skills**:
+Who's ready to indulge in their favorite recipes? Our "Heaven Seven" team -- Haiyah, Tim, Marlon & Lenny -- have accepted the challenge. We created an application using ReactJS to enable any picky eater to filter out those ingredients that just doesn't fit into their diet, but still enjoy a variety of the most fabulous handpicked recipes, over and over again! Hence our name, `*recipEATS!*` Our landing page invites you to bite in, then explore the various recipes we offer. However, to gain our trust, use our special search bar that eliminates the ingredients you have to avoid, yet allows you to zero-in on that dish's recipe, worry-free. The four of us worked closely together, practicing and using the below **Project Tools & Skills**:
 - React Hooks
 - React Router 6.2.1
 - Forms
@@ -55,19 +55,19 @@ Install dependencies: npm i
 Start the development server: npm start
 
 ### Components
-About Component
-The `About component` 
+`About` Component
+The `About component` simply links the go-to information for the **About Us** page that informs any user on the make-up and contact info about our group, Heaven Seven -- creators of **recipEATS!** site/app.
 
-Recipe Component
+`Recipe` Component
 The `Recipe component` is the card component, displaying each of all the student's profile for their: name, user name (email address) and date of birth.
 
-Recipes Component
+`Recipes` Component
 The `Recipes component` -- not to mixed up with the above 'StudentCard' component, displays every single detail available per student and is a breakdown of these details once the user clicks on each student profile. It includes all the info from the 'StudentCard' in addition to Codewars totals, Score percentages and certification links for each student's Resume, LinkedIn and Github profiles.
 
-Header & Footer Components
+`Header` & `Footer` Components
 The `Header component` and `Footer component` are the first interaction one should come across in the landing page, it's the simplest component, and will simply be our header display title.
 
-ReviewsForm Component
+`ReviewsForm` Component
 The `ReviewsForm` holds a separate file for each fetch. For the two functions, a fetch grabs all the student data, and another fetch grabs one student based on the ID.
 
 #### Bonus Items
@@ -87,17 +87,45 @@ Push to the branch: git push origin 'feature/new-feature'
 
 Submit a pull request.
 
-## RBM Group Dynamic
-*Marlon Regis* - marlon.regis@pursuit.org
+# USER STORIES
+
+-The app should be free to download and available on both Apple App, Google Play stores.
+
+-The app should include filters to cater for user customization for recipes 'without' certain ingredients.
+
+-As a first-time user, navigation and smooth functionality to minimize frustration is key.
+
+-As a user suffering from allergies, the app must make sense to show me my options.
+
+-As a repeat user, any new discovery should lead to continued revisits.
+
+-As an avid user, there should be opportunities through the app to build a community.
+
+-As a user, trust is extremely important so the products must deliver and mean as it says.
+
+-As a user, I want to discover easy-to-follow recipes.
+
+-As a user, I want to be able to also search for recipes based on specific ingredients.
+
+-
+
+## TWO (2) User Personas:
+
+(1) Here's **Alex**, he's a dessert fiend, but absolutely can't have any recipe that includes sugar, which for sweetness, could be replaced with the following: agave, honey, or coconut shavings/flakes. He's on the right site and app for his sweet-tooth cravings, with our recipEATS!
+
+(2) Very different to Alex, is **Jennifer**. She's OK with a lil' brown, or even white sugar in her life, but she's absolutely allergic to gluten. So the term 'gluten-free' is her friend, where it helps her avoid ingredients which include flour, wheat (& its derivatives), rye, barley, malt, and more.
+
+## Heaven Seven Group Dynamic
+*Marlon Regis* - marlonregis@pursuit.org
 As a coordinator and communications liason used efficiently for building out this project in the 3-person group, he ensured daily that steps and stages of some of the coding process moved along in chronological order; provided third-party tools and libraries that facilitated easy workflow via `wireframe.cc`, `bootstrap` and ?; provided daily organizational updates in `Trello Board`; optimized visuals via ??? used in CSS; and added code to keep building the on this Student Dashboard project in the `App.jsx` file and `Footer.jsx` component file.
 
-*Lenny Lopez* - 
+*Lenny Lopez* - l@pursuit.org
 A role of wearing many hats, Jose's handling of tasks ranged from being the main navigator behind designing our four `wireframes` -- 2 for the web and another 2 for mobile, and as the navigator with Harleigh and Marlon's 'live' input along the design, we finished that task on day one; to tackling the initial CSS to see what we're working with so that we also had a visual in the beginning, and continued to work on the `index.css` file throughout until the end; building the Aside (`Cohort`), `Header`, `Student` and Card (`StudentCard`) components, as well as the `fetch.js` API link; and the majority of the functionality and coding, including the `index.jsx` file, fell in Jose's hands (who also came up with the concept for naming our group, *RBM*).
 
-*Haiyah Lopez* - h@pursuit.org
+*Haiyah Lopez* - haiyahperez@pursuit.org
 Held down the repo as the chief navigator and lead, while Jose and Marlon worked through other various branches. Unfortunately, Harleigh fell very ill soon after the beginning of working on the `Router` options during our project, so her overall contribution has been understandably minimal to this point, but we wish her a healthy recovery.
 
-*Timothy Natal* - ?
+*Timothy Natal* - t@pursuit.org
 
 
 As a group, Haiyah and Tim were already the original personnel of 'Heaven Seven', whilst Lenny and myself, Marlon were the recent infiltrators. Overall, we got along, and daily we were pretty much engaged to the tasks at hand. A warning: don't ever work on a recipes/food app, without having a proper meal on your stomach! Anyway, the idea for the app was Tim's. Here's our `Team Norms` link: https://docs.google.com/document/d/1FETAEXKfVJviGIdRROPBv5K7-wRZFbXqEYB6R62w6Z0/edit
