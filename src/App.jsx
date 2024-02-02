@@ -27,11 +27,11 @@ const App = () => {
       </Route>
     </Routes>
     </div>
-    <div className="footer-body">
 <Routes>
   <Route path="/" element={<Landing/>}></Route>
   <Route path="/recipes" element={<Recipes/>}></Route>
 </Routes>
+    <div className="footer-body">
     </div>
   </div>
   )
