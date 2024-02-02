@@ -122,7 +122,7 @@ As a coordinator and communications liason used efficiently for building out thi
 *Lenny Lopez* - l@pursuit.org
 A role of wearing many hats, Jose's handling of tasks ranged from being the main navigator behind designing our four `wireframes` -- 2 for the web and another 2 for mobile, and as the navigator with Harleigh and Marlon's 'live' input along the design, we finished that task on day one; to tackling the initial CSS to see what we're working with so that we also had a visual in the beginning, and continued to work on the `index.css` file throughout until the end; building the Aside (`Cohort`), `Header`, `Student` and Card (`StudentCard`) components, as well as the `fetch.js` API link; and the majority of the functionality and coding, including the `index.jsx` file, fell in Jose's hands (who also came up with the concept for naming our group, *RBM*).
 
-*Haiyah Lopez* - h@pursuit.org
+*Haiyah Lopez* - haiyahperez@pursuit.org
 Held down the repo as the chief navigator and lead, while Jose and Marlon worked through other various branches. Unfortunately, Harleigh fell very ill soon after the beginning of working on the `Router` options during our project, so her overall contribution has been understandably minimal to this point, but we wish her a healthy recovery.
 
 *Timothy Natal* - t@pursuit.org
