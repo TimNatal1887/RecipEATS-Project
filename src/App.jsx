@@ -2,6 +2,7 @@ import React, { useState,useEffect } from "react";
 import "./App.css"
 import { Routes,Route } from "react-router-dom";
 import Recipes from "./components/Recipes";
+import ReviewsForm from "./components/ReviewsForm";
 // import Landing from "./components/Landing"
 // import Recipe from "./components/Recipe"
 
@@ -20,6 +21,7 @@ const App = () => {
       {/* <Route path="/" element={<Landing/>}/>*/}
       <Route path="/recipes" element={<Recipes/>}>
         {/* <Route path=":id" element={<Recipe/>}></Route> */}
+        <Route path=":id/addreview" element={<ReviewsForm/>}/>
       </Route>
     </Routes>
     </div>
