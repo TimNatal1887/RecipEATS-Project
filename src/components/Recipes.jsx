@@ -18,8 +18,8 @@ export default function Recipes(){
     } 
 
     function omitIngredient() {
-        if(filterIngredient.ingredient){
-            const filteredArray = recipes.filter(recipe => recipe.ingredients.every(ingredient => !ingredient.match(filterIngredient.ingredient)))
+        if(filterIngredient.ingredient && filterIngredient.ingredient.match(/^[a-zA-Z]+$/)){
+            const filteredArray = recipes.filter(recipe => recipe.ingredients.every(ingredient => !ingredient.toLowerCase().match(filterIngredient.ingredient.toLowerCase())))
             setFilteredRecipes(filteredArray)
         }else{
             setFilteredRecipes(recipes)
@@ -41,7 +41,7 @@ export default function Recipes(){
     return(
         <div className="recipe-list-wrapper">
             <div className="recipe-filter">
-                {console.log()}
+                {console.log(filterIngredient.ingredient.match(/^[a-zA-Z]+$/))}
             {/* This will be where we can do a search bar or some filter for recipes */}
             <label htmlFor="ingredient-search">
                 Search for recipes NOT including this ingredient

@@ -43,7 +43,6 @@ const Recipe = ({ recipe }) => {
     }
   };
   useEffect(() => {
-
     fetchReviews();
   }, [recipe.id]);
 
