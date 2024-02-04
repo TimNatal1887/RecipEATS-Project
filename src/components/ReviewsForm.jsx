@@ -3,7 +3,7 @@ import { useParams, useNavigate } from "react-router-dom"
 
 
 const URL = import.meta.env.VITE_BASE_API_URL
-const navigate = useNavigate()
+// const navigate = useNavigate()
 
 export default function ReviewsForm(){
     const {id} = useParams()
@@ -54,7 +54,7 @@ export default function ReviewsForm(){
                     <input type="text" id="comment" name="comment" value={review.comment} onChange={handleChange} />
                 </label>
                 <label htmlFor="rating">
-                    Rating: Must be whole number between 1-5
+                    Rating: Must be number between 1-5
                     <input type="text" id="rating" name="rating" value={review.rating} onChange={handleChange} />
                 </label>
             </form>

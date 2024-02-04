@@ -3,8 +3,9 @@ import "./App.css"
 import { Routes,Route } from "react-router-dom";
 import Recipes from "./components/Recipes";
 import ReviewsForm from "./components/ReviewsForm";
-// import Landing from "./components/Landing"
-// import Recipe from "./components/Recipe"
+import Landing from "./components/Landing"
+import Recipe from "./components/Recipe"
+import RecipeDetails from "./components/RecipeDetails"
 
 
 const App = () => {
@@ -20,17 +21,13 @@ const App = () => {
     <Routes>
       {/* The commented out Route components can be uncommented when the 2 components are ready */}
 
-      {/* <Route path="/" element={<Landing/>}/>*/}
+      <Route path="/" element={<Landing/>}/>
       <Route path="/recipes" element={<Recipes/>}>
-        {/* <Route path=":id" element={<Recipe/>}></Route> */}
+        {/* <Route path=":id" element={<RecipeDetails/>}></Route> */}
         <Route path=":id/addreview" element={<ReviewsForm/>}/>
       </Route>
     </Routes>
     </div>
-<Routes>
-  <Route path="/" element={<Landing/>}></Route>
-  <Route path="/recipes" element={<Recipes/>}></Route>
-</Routes>
     <div className="footer-body">
     </div>
   </div>
