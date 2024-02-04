@@ -20,9 +20,9 @@ const Landing = () => {
   
   return (
     <div className="landing">
-        {/* <div className="about">
+        <div className="about">
          <About />
-        </div> */}
+        </div>
     <div className="carousel">
       <button onClick={handlePrevious}>Previous</button>
       <button onClick={handleNext}>Next</button>
