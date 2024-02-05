@@ -29,13 +29,13 @@ h1 {
   color: #ed786a;
   text-shadow: 0.05em 0.075em 0 rgba(0, 0, 0, 0.1);
   font-size: 3em;
-  margin-bottom: 20px; /* Add margin below heading */
+  margin-bottom: 20px; 
 }
 
 .button-container {
   text-align: center;
 
-  
+
 }
 
 .get-started-button {
