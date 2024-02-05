@@ -41,7 +41,6 @@ export default function Recipes(){
     return(
         <div className="recipe-list-wrapper">
             <div className="recipe-filter">
-                {console.log(filterIngredient.ingredient.match(/^[a-zA-Z]+$/))}
             {/* This will be where we can do a search bar or some filter for recipes */}
             <label htmlFor="ingredient-search">
                 Search for recipes NOT including this ingredient

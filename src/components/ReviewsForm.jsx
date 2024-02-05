@@ -57,6 +57,7 @@ export default function ReviewsForm(){
                     Rating: Must be number between 1-5
                     <input type="text" id="rating" name="rating" value={review.rating} onChange={handleChange} />
                 </label>
+                <button>Submit Review</button>
             </form>
         </div>
     )
