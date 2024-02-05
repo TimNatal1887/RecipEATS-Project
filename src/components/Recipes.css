@@ -1,0 +1,78 @@
+.recipe-list-wrapper {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .recipe-filter {
+    margin-bottom: 20px;
+  }
+  
+  .recipe-filter label {
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  .recipe-filter input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* Recipe Card Styles */
+  .recipe-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .recipe-title {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .recipe-ingredients {
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .recipe-instructions {
+    color: #777;
+  }
+  
+  /* Get Started Button */
+  .get-started-button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .get-started-button:hover {
+    background-color: #45a049;
+  }
+  
