@@ -1,0 +1,11 @@
+.recipe-detail-wrapper {
+    background-color: var(--gamboge);
+  }
+.recipe-detail-wrapper h2{
+    font-family: "Arvo"
+}
+
+.recipe-detail-wrapper img{
+   height: 200px ;
+   width: 200px;
+}
