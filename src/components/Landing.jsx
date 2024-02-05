@@ -21,17 +21,18 @@ const Landing = () => {
   
   return (
     <div className="landing">
-        <div className="about">
-         <About />
-        </div>
-        <Carousel/>
-    <div className="heading">
-     <h1>RecipEATS!</h1>
-     <h3>Find the perfect recipe for you!</h3>
-    <button onClick={() => navigate(`/recipes`)}className="start">Get Started!</button>
+      <h1>RecipEATS!</h1>
+      <h3>Find the perfect recipe for you!</h3>
+      <div className="carousel">
+        {/* Your Carousel component goes here */}
+        <Carousel />
+      </div>
+      <div className="button-container">
+        <Link to="/recipes" className="get-started-button">Get Started!</Link>
+      </div>
     </div>
- </div>
   );
-};
+  };
+  
+  export default Landing;
 
-export default Landing;
