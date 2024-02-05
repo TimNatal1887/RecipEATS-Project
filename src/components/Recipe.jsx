@@ -63,7 +63,10 @@ const Recipe = ({ recipe }) => {
         <h3>Reviews</h3>
         <ul>
           {reviews.map((review) => (
-            <li key={review.id}>Rating: {rating}</li>
+            <li key={review.id}>
+              {review.name} says: {review.comment}
+              Rating: {"⭐️".repeat(rating)}
+              </li>
           ))}
         </ul>
       </div>
