@@ -19,7 +19,7 @@ const Landing = () => {
 
   const navigate = useNavigate()
   
-  return (
+   return (
     <div className="landing">
       <h1>RecipEATS!</h1>
       <h3>Find the perfect recipe for you!</h3>
