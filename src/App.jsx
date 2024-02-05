@@ -5,7 +5,7 @@ import Recipes from "./components/Recipes";
 import ReviewsForm from "./components/ReviewsForm";
 import Landing from "./components/Landing"
 import RecipeDetails from "./components/RecipeDetails"
-import Header from "./components/Header";
+// import Header from "./components/Header";
 
 
 const App = () => {
@@ -15,7 +15,7 @@ const App = () => {
 
   return (
   <div className="wrapper">
-    <Header/>
+    {/* <Header/> */}
     <div className="recipe-body">
     <Routes>
       {/* The commented out Route components can be uncommented when the 2 components are ready */}
