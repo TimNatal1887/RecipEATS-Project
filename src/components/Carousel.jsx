@@ -1,48 +1,84 @@
-import "./Carousel.css" 
-
+import React, { useEffect, useState } from 'react';
+import './Carousel.css';
 
 export default function Carousel() {
-    
-    const plusSlides = (num) => {
-        console.log(num)
+  const [slideIndex, setSlideIndex] = useState(1);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      showSlides(slideIndex + 1);
+    }, 2000);
+
+    return () => {
+      clearInterval(intervalId); // Clear the interval on component unmount
+    };
+  }, [slideIndex]); // Re-run effect when slideIndex changes
+
+  const currentSlide = (num) => {
+    setSlideIndex(num);
+    showSlides(num);
+  };
+
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName('mySlides');
+    let dots = document.getElementsByClassName('dot');
+    if (n > slides.length) {
+      n = 1;
     }
-
-    const currentSlide = (num) => {
-        console.log(num)
+    if (n < 1) {
+      n = slides.length;
     }
-    return(
-        <div className="carousel">
-            Carousel Component
-        <div className="slideshow-container">
+    setSlideIndex(n);
 
-  <div className="mySlides fade">
-    <div className="numbertext">1 / 3</div>
-    <img src="https://res.cloudinary.com/dgifdj6nx/image/upload/v1706806167/recipEATS-LandingPage2_lxm0k8.jpg" style={ {width:"100%"} }/>
-    <div className="text">Caption Text</div>
-  </div>
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = 'none';
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(' active', '');
+    }
+    slides[n - 1].style.display = 'block';
+    dots[n - 1].className += ' active';
+  }
 
-  <div className="mySlides fade">
-    <div className="numbertext">2 / 3</div>
-    <img src="https://res.cloudinary.com/dgifdj6nx/image/upload/v1706807150/recipEATS-LandingCarousel_isbl3d.jpg" style={ {width:"100%"} }/>
-    <div className="text">Caption Two</div>
-  </div>
-
-  <div className="mySlides fade">
-    <div className="numbertext">3 / 3</div>
-    <img src="https://res.cloudinary.com/dgifdj6nx/image/upload/v1706807152/recipEATS-LandingCarousel5_qrb79v.jpg" style={ {width:"100%"} }/>
-    <div className="text">Caption Three</div>
-  </div>
-
-  <a className="prev" onClick={plusSlides(-1)}>&#10094;</a>
-  <a className="next" onClick={plusSlides(1)}>&#10095;</a>
-</div>
-<br/>
-
-<div style={ {textAlign:"center"} }>
-  <span className="dot" onClick={currentSlide(1)}></span>
-  <span className="dot" onClick={currentSlide(2)}></span>
-  <span className="dot" onClick={currentSlide(3)}></span>
-</div>
+  return (
+    <div className="carousel">
+      Carousel Component
+      <div className="slideshow-container">
+        <div className="mySlides fade">
+          <div className="numbertext">1 / 3</div>
+          <img
+            src="https://res.cloudinary.com/dgifdj6nx/image/upload/v1706806167/recipEATS-LandingPage2_lxm0k8.jpg"
+            style={{ width: '100%' }}
+          />
+          <div className="text">Caption Text</div>
         </div>
-    )
+
+        <div className="mySlides fade">
+          <div className="numbertext">2 / 3</div>
+          <img
+            src="https://res.cloudinary.com/dgifdj6nx/image/upload/v1706807150/recipEATS-LandingCarousel_isbl3d.jpg"
+            style={{ width: '100%' }}
+          />
+          <div className="text">Caption Two</div>
+        </div>
+
+        <div className="mySlides fade">
+          <div className="numbertext">3 / 3</div>
+          <img
+            src="https://res.cloudinary.com/dgifdj6nx/image/upload/v1706807152/recipEATS-LandingCarousel5_qrb79v.jpg"
+            style={{ width: '100%' }}
+          />
+          <div className="text">Caption Three</div>
+        </div>
+      </div>
+      <br />
+
+      <div style={{ textAlign: 'center' }}>
+        <span className="dot" onClick={() => currentSlide(1)}></span>
+        <span className="dot" onClick={() => currentSlide(2)}></span>
+        <span className="dot" onClick={() => currentSlide(3)}></span>
+      </div>
+    </div>
+  );
 }
