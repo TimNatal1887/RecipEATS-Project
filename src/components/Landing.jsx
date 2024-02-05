@@ -8,9 +8,6 @@ const Landing = () => {
   
    return (
     <div className="landing">
-        <div className="about">
-         <About />
-        </div>
         <Carousel/>
     <div className="heading">
      <h1>RecipEATS!</h1>

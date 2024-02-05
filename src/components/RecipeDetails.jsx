@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import { Link } from "react-router-dom"
+import "./RecipeDetails.css"
 
 const URL = import.meta.env.VITE_BASE_API_URL
 

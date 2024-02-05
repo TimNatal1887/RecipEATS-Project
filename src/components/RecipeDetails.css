@@ -1,4 +1,5 @@
 .recipe-detail-wrapper {
+    min-height: 95vh;
     background-color: var(--gamboge);
   }
 .recipe-detail-wrapper h2{
@@ -6,6 +7,6 @@
 }
 
 .recipe-detail-wrapper img{
-   height: 200px ;
-   width: 200px;
+    height: 200px;
+    width: 200px;
 }
