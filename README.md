@@ -70,6 +70,11 @@ The `Header component` and `Footer component` are the first interaction one shou
 `ReviewsForm` Component
 The `ReviewsForm` holds a separate file for each fetch. For the two functions, a fetch grabs all the student data, and another fetch grabs one student based on the ID.
 
+`RecipeDetails` Component
+
+`Carousel` Component
+
+
 #### Bonus Items
 Stretch Goals:
 -A fun option to invite a user, enabling them on our site/app to input their own recipes, according to the same object structure of our `recipes` data-point.
@@ -117,16 +122,16 @@ Submit a pull request.
 
 ## Heaven Seven Group Dynamic
 *Marlon Regis* - marlonregis@pursuit.org
-As a coordinator and communications liason used efficiently for building out this project in the 3-person group, he ensured daily that steps and stages of some of the coding process moved along in chronological order; provided third-party tools and libraries that facilitated easy workflow via `wireframe.cc`, `bootstrap` and ?; provided daily organizational updates in `Trello Board`; optimized visuals via ??? used in CSS; and added code to keep building the on this Student Dashboard project in the `App.jsx` file and `Footer.jsx` component file.
+Coming into this already-established team, I wasted no time in trying to gel together with my new squad, of whom Lenny is also a new team-member. Walked squad member Haiyah in our `wireframe.cc` designed wireframes; contributed data for our manual API using my creativity and ChatGPT, with entries for our `Recipes` and `Reviews` data-points for our object structure; manned this `Readme.md` file from start to finish; navigated together w/Tim, the code for functionality in the `Recipes` component file; provided daily organizational updates in `Trello Board`; and set-up zoom on weekend for squad-time (w/Dan) for any blockers, which we had re `Carousel` component functionality.
 
 *Lenny Lopez* - l@pursuit.org
-A role of wearing many hats, Jose's handling of tasks ranged from being the main navigator behind designing our four `wireframes` -- 2 for the web and another 2 for mobile, and as the navigator with Harleigh and Marlon's 'live' input along the design, we finished that task on day one; to tackling the initial CSS to see what we're working with so that we also had a visual in the beginning, and continued to work on the `index.css` file throughout until the end; building the Aside (`Cohort`), `Header`, `Student` and Card (`StudentCard`) components, as well as the `fetch.js` API link; and the majority of the functionality and coding, including the `index.jsx` file, fell in Jose's hands (who also came up with the concept for naming our group, *RBM*).
+A role of wearing many hats, .
 
 *Haiyah Lopez* - haiyahperez@pursuit.org
-Held down the repo as the chief navigator and lead, while Jose and Marlon worked through other various branches. Unfortunately, Harleigh fell very ill soon after the beginning of working on the `Router` options during our project, so her overall contribution has been understandably minimal to this point, but we wish her a healthy recovery.
+Haiyah.
 
 *Timothy Natal* - t@pursuit.org
-
+Last, but certainly not least, Tim's role was an integral one for the squad, as the recipEATS! app is his brainchild. He
 
 As a group, Haiyah and Tim were already the original personnel of 'Heaven Seven', whilst Lenny and myself, Marlon were the recent infiltrators. Overall, we got along, and daily we were pretty much engaged to the tasks at hand. A warning: don't ever work on a recipes/food app, without having a proper meal on your stomach! Anyway, the idea for the app was Tim's. Here's our `Team Norms` link: https://docs.google.com/document/d/1FETAEXKfVJviGIdRROPBv5K7-wRZFbXqEYB6R62w6Z0/edit
 
