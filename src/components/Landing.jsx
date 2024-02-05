@@ -2,6 +2,7 @@ import { Link, Navigate, useNavigate } from 'react-router-dom';
 import React, { useState } from 'react';
 import About from "./About.jsx";
 import "./Landing.css"
+import Carousel from "./Carousel.jsx";
 
 const Landing = () => {
   const [index, setIndex] = useState(0);
@@ -23,7 +24,8 @@ const Landing = () => {
         <div className="about">
          <About />
         </div>
-    <div className="carousel">
+        <Carousel/>
+    {/* <div className="carousel">
       <button onClick={handlePrevious}>Previous</button>
       <button onClick={handleNext}>Next</button>
       <div className="carousel-content">
@@ -37,7 +39,7 @@ const Landing = () => {
         <img src="https://res.cloudinary.com/dgifdj6nx/image/upload/v1706807152/recipEATS-LandingCarousel5_qrb79v.jpg" alt="Chocolate Bundt Cake"></img>
         </div>
       </div>
-    </div>
+    </div> */}
     <div className="heading">
      <h1>RecipEATS!</h1>
      <h3>Find the perfect recipe for you!</h3>
