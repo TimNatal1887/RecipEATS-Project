@@ -6,6 +6,7 @@ import ReviewsForm from "./components/ReviewsForm";
 import Landing from "./components/Landing"
 import RecipeDetails from "./components/RecipeDetails"
 import Header from "./components/Header";
+import About from "./components/About";
 
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
     <Routes>
       {/* The commented out Route components can be uncommented when the 2 components are ready */}
       <Route path="/" element={<Landing/>}/>
+      <Route path="/about" element={<About/>}/>
       <Route path="/recipes">
         <Route index element={<Recipes/>}></Route>
         <Route path=":id" element={<RecipeDetails/>}></Route>
