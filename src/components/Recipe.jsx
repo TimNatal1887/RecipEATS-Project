@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams,Link } from "react-router-dom";
-
+import "./Recipe.css"
 
 const URL= import.meta.env.VITE_BASE_API_URL
 const Recipe = ({ recipe }) => {
@@ -57,6 +57,7 @@ const Recipe = ({ recipe }) => {
       <div className="ingredients">
         <h3>Ingredients</h3>
         <p>{ingredientString}</p>
+        <br />
       </div>
     </div>
   );

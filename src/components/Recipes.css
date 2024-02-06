@@ -1,5 +1,5 @@
 .recipe-list-wrapper {
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 40px auto;
     padding: 20px;
     background-color: #fff;
@@ -33,6 +33,11 @@
   ul {
     list-style: none;
     padding: 0;
+  }
+
+  .recipe-list-wrapper ul {
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
   }
   
   /* Recipe Card Styles */
