@@ -1,5 +1,6 @@
-import { useState } from "react"
+import { useState, useEffect} from "react"
 import { useParams, useNavigate } from "react-router-dom"
+import Recipe from "./Recipe"
 
 
 const URL = import.meta.env.VITE_BASE_API_URL
@@ -7,21 +8,29 @@ const URL = import.meta.env.VITE_BASE_API_URL
 
 export default function ReviewsForm(){
     const {id} = useParams()
+    const [recipe, setRecipe] = useState({})
+    
+    useEffect(()=>{
+        fetch(`${URL}/recipes/${id}`)
+        .then((response)=>response.json())
+        .then((data)=> setRecipe(data))
+    },[id])
 
+    
     const [review, setReview] = useState({
         name:"",
         comment:"",
         rating:"",
         dishId: id
     })
-
+    
     function handleChange(e){
         setReview({
             ...review,
             [e.target.id]:e.target.value
         })
     }
-
+    
     function addReview(){
         const options = {
             method: "POST",
@@ -33,7 +42,7 @@ export default function ReviewsForm(){
         });
     }
     
-
+    
     function handleSubmit(e){
         e.preventDefault();
         addReview()
@@ -42,9 +51,11 @@ export default function ReviewsForm(){
         })
         .catch((error)=> console.error(error))
     }
+    
     return(
-        <div className="form-container">
+        <div className="form-container">   
             <form className="review-form" onSubmit={handleSubmit}>
+                <h2> Add a review for {recipe.dishName}</h2>
                 <label htmlFor="reviewerName">
                     Name
                     <input type="text" id="name" name="reviewerName" value={review.name} onChange={handleChange}/>

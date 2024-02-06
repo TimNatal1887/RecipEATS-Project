@@ -7,7 +7,29 @@ const URL = import.meta.env.VITE_BASE_API_URL
 
 export default function RecipeDetails(){
     const [recipe, setRecipe] = useState({})
+    const [reviews, setReviews] = useState([]);
     const {id} = useParams()
+
+    const fetchReviews = async () => {
+        try {
+          const response = await fetch(
+              `${URL}/reviews?dishId=${recipe.id}`
+              );
+    
+          if (!response.ok) {
+            throw new Error("Failed to fetch reviews");
+          }
+    
+          const data = await response.json();
+          setReviews(data);
+        } catch (error) {
+          console.error("Error fetching reviews:", error);
+        }
+      };
+      useEffect(() => {
+        fetchReviews();
+      }, [recipe.id]);
+    
 
 
     useEffect(()=>{
@@ -46,6 +68,17 @@ export default function RecipeDetails(){
                 </div>
                     <div className="recipe-prep-wrapper">
                         <div className="review-button-wrapper">
+                            <div className="reviews">
+                                <h3>Reviews</h3>
+                                <ul>
+                                {reviews.map((review) => (
+                                    <li key={review.id}>
+                                        <p>{review.name} says: {review.comment}</p>
+                                        <p>Rating: {"⭐️".repeat(review.rating)}</p>
+                                    </li>
+                                ))}   
+                                </ul>
+                            </div>
                             <Link  className="button-to-review" to={`/recipes/${id}/review`}>
                                 <button> Add Review</button>
                             </Link>

@@ -58,18 +58,6 @@ const Recipe = ({ recipe }) => {
         <h3>Ingredients</h3>
         <p>{ingredientString}</p>
       </div>
-
-      <div className="reviews">
-        <h3>Reviews</h3>
-        <ul>
-          {reviews.map((review) => (
-            <li key={review.id}>
-              {review.name} says: {review.comment}
-              Rating: {"⭐️".repeat(rating)}
-              </li>
-          ))}
-        </ul>
-      </div>
     </div>
   );
 };
