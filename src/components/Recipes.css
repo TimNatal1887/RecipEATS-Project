@@ -20,7 +20,7 @@
   .recipe-filter input {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid green;
     border-radius: 5px;
   }
   
@@ -76,3 +76,10 @@
     background-color: #45a049;
   }
   
+  .toggle-label{
+    width: 100px;
+  }
+
+  .toggle-wrapper{
+    display: flex;
+  }
