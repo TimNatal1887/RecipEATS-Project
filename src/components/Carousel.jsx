@@ -55,7 +55,7 @@ export default function Carousel() {
         </div>
 
         <div className="mySlides fade">
-          <div className="numbertext">2 / 3</div>
+          <div className="numbertext"></div>
           <img
             src="https://res.cloudinary.com/dgifdj6nx/image/upload/v1706807150/recipEATS-LandingCarousel_isbl3d.jpg"
             style={{ width: '100%' }}
