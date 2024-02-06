@@ -1,12 +1,68 @@
 .recipe-detail-wrapper {
     min-height: 95vh;
     background-color: var(--gamboge);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "Arvo";
+    padding-right: 50px;
+    font-size: 18px;
   }
-.recipe-detail-wrapper h2{
-    font-family: "Arvo"
+  
+.recipe-head{
+    display: flex;
+    justify-content: space-evenly;
 }
 
+.recipe-head h2{
+    font-size: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.recipe-head img{
+    margin-left: 90px;
+}
 .recipe-detail-wrapper img{
-    height: 200px;
-    width: 200px;
+    height: 450px;
+    width: auto;
+}
+
+.recipe-detail-body{
+    margin-left: 30px;
+    border: 2px solid black;
+    padding: 15px 15px;
+    width: 80%;
+    height: 30%;
+    background: var(--alloy-orange);
+
+}
+.recipe-ingredients{
+    margin-top: 15px;
+}
+.recipe-ingredients h4{
+    text-decoration: underline;
+}
+.recipe-ingredients ul{
+    list-style: none;
+}
+.recipe-prep-wrapper{
+    display: flex;
+
+}
+.recipe-prep{
+    margin-left: auto;
+    margin-right: 50px;
+    width: 50%;
+}
+
+
+.review-button-wrapper{
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: 30px;
+}
+
+.review-button-wrapper button{
+    font-size: 18px
 }
