@@ -1,20 +1,29 @@
 .header-wrapper h1{
     color: whitesmoke;
+    width: fit-content;
+    font-family: 'Arvo';
+    font-weight: 700;
+    font-size: 3em;
+    padding-top: 10px;
+    padding-left: 20px;
 }
 .header-wrapper{
     background: navy;
-    height: 8vh;
+    height: 10vh;
 }
 .header-link{
     color: black;
     text-decoration: none;
 }
-.about-link .about-h4{
-    color: yellow;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
+.about-headerwrap{
+    margin-bottom: 20px;
 }
-
-.about-h4{
-    text-align: right;
+.about-link .about-h4 {
+    color: yellow;
+    font-family: 'Arvo';
+    font-style: bold;
+    font-size: 16px;
+    width:fit-content;
+    margin-left: auto; 
+    padding-right: 15px; 
 }

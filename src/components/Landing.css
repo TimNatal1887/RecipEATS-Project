@@ -16,14 +16,12 @@
   margin-bottom: 40px; /* Add margin to create space between carousel and heading */
 }
 
-
-
 .carousel-content {
   display: flex;
   transition: transform 0.5s ease-in-out;
 }
 
-h1 {
+.heading h1 {
   font-family: 'Arvo';
   font-weight: 700;
   color: #ed786a;
@@ -32,6 +30,10 @@ h1 {
   margin-bottom: 20px; 
 }
 
+.heading h3 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding-bottom: 10px;
+}
 .button-container {
   text-align: center;
 
