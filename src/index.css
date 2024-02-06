@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+
 :root {
   --rich-black: #001219ff;
   --midnight-green: #005f73ff;
@@ -10,6 +12,7 @@
   --rufous: #ae2012ff;
   --auburn: #9b2226ff;
 }
+
 
 * {
   margin: 0;
