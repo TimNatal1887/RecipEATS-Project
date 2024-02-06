@@ -6,6 +6,10 @@ export default function Header(){
             <Link to="/" className="header-link">
                 <h1>RecipEATS!</h1>
             </Link>
+            <Link to="/about" className="about-link">
+                <h4 className="about-h4">About Us</h4>
+            </Link>
+
         </div>
     )
 }
