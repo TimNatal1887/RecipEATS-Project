@@ -79,26 +79,31 @@ The `Header component` is up top, as its name suggests, on the landing page. It'
 The `ReviewsForm` holds a separate file for each fetch. For the two functions, a fetch grabs all the recipe data, and another fetch grabs one recipe based on the ID.
 
 `RecipeDetails` Component
-Our `RecipeDetails component` gives the user a taste of some very entertaining details about the recipe. From their 'country of origin' to 'Spice Level' and from 'Meal Prep' time to  giving the user the option to 'Give a Review'. 
+Our `RecipeDetails component` gives the user a taste of some very entertaining details about the recipe. From their 'country of origin' to 'Spice Level' and from 'Meal Prep' time to  giving the user the option to 'Add review'. 
 
 ### Routing
-4 Routes:
+We used (5) Routes for the following files below:
 
--
--
--
--
+-Index.html
+
+-About.jsx
+
+-Recipes.jsx
+
+-Recipe.jsx
+
+-RecipeDetails.jsx
 
 #### Bonus Items
 Stretch Goals:
 
 -A fun option to invite a user, enabling them on our site/app to input their own recipes, according to the same object structure of our `recipes` data-point.
 
--Reviews or comments on any recipe resource that persists in JSON server.
+-Reviews or comments from the user on any recipe resource that persists in JSON server.
 
--Most, if not all our images, are stored and uploaded in a Cloudinary account, owned by one of squad members. 
+-Most, if not all our images, are stored and uploaded in a Cloudinary account, owned by one of our squad members: Marlon. 
 
--Sorting and searching for data, filtering it down to maybe a few handful of recipes.
+-Sorting and searching for data, filtering it down to maybe a few handful of recipes, based on an ingredient(s) to be excluded.
 
 #### Contributing
 Contributions: 
@@ -231,7 +236,7 @@ recipEATS! (visuals throughout the process)
 *Haiyah Perez*: "I'm a multi-talented artist who finds joy in expressing creativity through various mediums. Whether it's bringing ideas to life on canvas through drawing and painting or molding intricate sculptures from clay, I love exploring the endless possibilities of artistic expression."
 (https://github.com/haiyahperez)
 
-*Lenny Lopez*: "?"
+*Lenny Lopez*: "I'm first generation-born in the US, in my family."
 (https://github.com/notmenopecode)
 
 *Marlon Regis*: "In a different space, my 'name' IS one of the dishes in our recipe app!"
