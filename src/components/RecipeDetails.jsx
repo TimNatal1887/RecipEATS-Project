@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { useParams } from "react-router-dom"
+import { useParams,useNavigate } from "react-router-dom"
 import { Link } from "react-router-dom"
 import "./RecipeDetails.css"
 import {destroyReview} from "../api/fetch"
@@ -82,8 +82,12 @@ export default function RecipeDetails(){
                                 {reviews.map((review) => (
                                     <li key={review.id}>
                                         <p>{review.name} says: {review.comment}</p>
-                                        <p>Rating: {"⭐️".repeat(review.rating)}</p>
-                                        <button onClick={()=>handleDeleteReview(review.id)}>Remove Review</button>
+                                        <p>Rating: {"⭐️".repeat(review.rating)}
+                                        <button onClick={()=>handleDeleteReview(review.id)}>Remove</button>
+                                        <Link to={`/recipes/${id}/review/${review.id}/edit`}>
+                                        <button>Edit</button>
+                                        </Link>
+                                        </p>
                                     </li>
                                 ))}   
                                 </ul>

@@ -67,5 +67,14 @@ ul{
 }
 
 .review-button-wrapper button{
-    font-size: 18px
+    font-size: 16px
+}
+.reviews{
+    color: black;
+    margin:15px 0px;
+    font-style: italic;
+}
+
+.reviews h3{
+    color: black;
 }
