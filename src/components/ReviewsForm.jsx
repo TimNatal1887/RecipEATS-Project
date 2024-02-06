@@ -1,12 +1,12 @@
 import { useState, useEffect} from "react"
 import { useParams, useNavigate } from "react-router-dom"
-import Recipe from "./Recipe"
+import {addReview} from "../api/fetch"
 
 
 const URL = import.meta.env.VITE_BASE_API_URL
-// const navigate = useNavigate()
 
 export default function ReviewsForm(){
+    const navigate = useNavigate();
     const {id} = useParams()
     const [recipe, setRecipe] = useState({})
     
@@ -31,23 +31,12 @@ export default function ReviewsForm(){
         })
     }
     
-    function addReview(){
-        const options = {
-            method: "POST",
-            body: JSON.stringify(review),
-            headers: { "Content-Type": "application/json" },
-        };
-        return fetch(`${URL}/reviews`, options).then((response) => {
-            return response.json();
-        });
-    }
-    
     
     function handleSubmit(e){
         e.preventDefault();
-        addReview()
+        addReview(review)
         .then((response)=>{
-            navigate(`${URL}/recipes/${id}`)
+            navigate(`/recipes/${id}`)
         })
         .catch((error)=> console.error(error))
     }

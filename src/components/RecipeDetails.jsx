@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import { Link } from "react-router-dom"
 import "./RecipeDetails.css"
+import {destroyReview} from "../api/fetch"
 
 const URL = import.meta.env.VITE_BASE_API_URL
 
@@ -9,6 +10,12 @@ export default function RecipeDetails(){
     const [recipe, setRecipe] = useState({})
     const [reviews, setReviews] = useState([]);
     const {id} = useParams()
+
+   
+    function handleDeleteReview(reviewId){
+        destroyReview(reviewId)
+        .then((response)=>window.location.reload())
+    }
 
     const fetchReviews = async () => {
         try {
@@ -26,6 +33,7 @@ export default function RecipeDetails(){
           console.error("Error fetching reviews:", error);
         }
       };
+
       useEffect(() => {
         fetchReviews();
       }, [recipe.id]);
@@ -75,6 +83,7 @@ export default function RecipeDetails(){
                                     <li key={review.id}>
                                         <p>{review.name} says: {review.comment}</p>
                                         <p>Rating: {"⭐️".repeat(review.rating)}</p>
+                                        <button onClick={()=>handleDeleteReview(review.id)}>Remove Review</button>
                                     </li>
                                 ))}   
                                 </ul>
