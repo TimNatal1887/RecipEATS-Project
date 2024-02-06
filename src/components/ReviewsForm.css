@@ -13,7 +13,7 @@
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    background: var(--vanilla);
+    background: var(--alloy-orange);
 }
 
 .form-container label{
