@@ -7,6 +7,7 @@ import Landing from "./components/Landing"
 import RecipeDetails from "./components/RecipeDetails"
 import Header from "./components/Header";
 import About from "./components/About";
+import ReviewsEditForm from "./components/ReviewsEditForm";
 
 
 const App = () => {
@@ -26,6 +27,7 @@ const App = () => {
         <Route index element={<Recipes/>}></Route>
         <Route path=":id" element={<RecipeDetails/>}></Route>
         <Route path=":id/review" element={<ReviewsForm/>}/>
+        <Route path=":id/review/:reviewId/edit" element={<ReviewsEditForm/>}/>
       </Route>
     </Routes>
     </div>

@@ -1,50 +1,50 @@
-import { useState } from "react"
+import { useState, useEffect} from "react"
 import { useParams, useNavigate } from "react-router-dom"
+import {addReview} from "../api/fetch"
 
 
 const URL = import.meta.env.VITE_BASE_API_URL
-// const navigate = useNavigate()
 
 export default function ReviewsForm(){
+    const navigate = useNavigate();
     const {id} = useParams()
+    const [recipe, setRecipe] = useState({})
+    
+    useEffect(()=>{
+        fetch(`${URL}/recipes/${id}`)
+        .then((response)=>response.json())
+        .then((data)=> setRecipe(data))
+    },[id])
 
+    
     const [review, setReview] = useState({
         name:"",
         comment:"",
         rating:"",
         dishId: id
     })
-
+    
     function handleChange(e){
         setReview({
             ...review,
             [e.target.id]:e.target.value
         })
     }
-
-    function addReview(){
-        const options = {
-            method: "POST",
-            body: JSON.stringify(review),
-            headers: { "Content-Type": "application/json" },
-        };
-        return fetch(`${URL}/reviews`, options).then((response) => {
-            return response.json();
-        });
-    }
     
-
+    
     function handleSubmit(e){
         e.preventDefault();
-        addReview()
+        addReview(review)
         .then((response)=>{
-            navigate(`${URL}/recipes/${id}`)
+            navigate(`/recipes/${id}`)
         })
         .catch((error)=> console.error(error))
     }
+    
     return(
-        <div className="form-container">
+        <div className="form-container">   
             <form className="review-form" onSubmit={handleSubmit}>
+                <h2> Add a review for {recipe.dishName}</h2>
                 <label htmlFor="reviewerName">
                     Name
                     <input type="text" id="name" name="reviewerName" value={review.name} onChange={handleChange}/>
