@@ -3,6 +3,7 @@
 }
 .header-wrapper{
     background: navy;
+    height: 8vh;
 }
 .header-link{
     color: black;
