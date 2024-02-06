@@ -1,0 +1,14 @@
+.recipe-page img {
+    height: 400px;
+}
+
+.recipe-page * {
+    color: black;
+    margin-left: 10px;
+}
+
+.recipe-page {
+    border: 1px solid black;
+    background-color: var(--alloy-orange);
+    margin: 10px;
+}
