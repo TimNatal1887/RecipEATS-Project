@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react"
 import Recipe from "./Recipe";
+import "./Recipes.css"
 
 const URL = import.meta.env.VITE_BASE_API_URL
 
