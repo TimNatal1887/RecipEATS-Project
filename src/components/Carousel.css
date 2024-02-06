@@ -45,25 +45,10 @@ h3 {
 
 
 /* Caption text */
-.text {
-  color: #ffffff; /* Change text color to white or your preferred color */
-  font-size: 18px;
-  padding: 12px;
-  position: absolute;
-  bottom: 16px;
-  width: 100%;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background */
-}
+
 
 /* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
+
 
 /* The dots/bullets/indicators */
 .dot {

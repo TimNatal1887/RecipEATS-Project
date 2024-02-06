@@ -43,7 +43,7 @@ export default function Carousel() {
 
   return (
     <div className="carousel">
-      Carousel Component
+      
       <div className="slideshow-container">
         <div className="mySlides fade">
           <div className="numbertext">1 / 3</div>
@@ -51,7 +51,7 @@ export default function Carousel() {
             src="https://res.cloudinary.com/dgifdj6nx/image/upload/v1706806167/recipEATS-LandingPage2_lxm0k8.jpg"
             style={{ width: '100%' }}
           />
-          <div className="text">Caption Text</div>
+          <div className="text"></div>
         </div>
 
         <div className="mySlides fade">
@@ -60,7 +60,7 @@ export default function Carousel() {
             src="https://res.cloudinary.com/dgifdj6nx/image/upload/v1706807150/recipEATS-LandingCarousel_isbl3d.jpg"
             style={{ width: '100%' }}
           />
-          <div className="text">Caption Two</div>
+          <div className="text"></div>
         </div>
 
         <div className="mySlides fade">
@@ -69,7 +69,7 @@ export default function Carousel() {
             src="https://res.cloudinary.com/dgifdj6nx/image/upload/v1706807152/recipEATS-LandingCarousel5_qrb79v.jpg"
             style={{ width: '100%' }}
           />
-          <div className="text">Caption Three</div>
+          <div className="text"></div>
         </div>
       </div>
       <br />
