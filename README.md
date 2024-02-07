@@ -1,4 +1,4 @@
-### recipEATS! Project (Heaven Seven)
+*recipEATS! Project (Heaven Seven)*
 
 <img src="https://res.cloudinary.com/dgifdj6nx/image/upload/t_Gradient fade/v1706806166/recipEATS-LandingPage1_d6ojpf.avif" alt="recipEATS!" width="400" height="400">
 
@@ -61,25 +61,25 @@ Start the development server: npm start
 The `About component` simply links the go-to information for the **About Us** page that informs any user on the make-up and contact info about our group, Heaven Seven -- 4 creators of the **recipEATS!** site/app.
 
 `Landing` Component
-For the `Landing component` page, this is your first stop as a user. From this page, there's a 'carousel' medley of images, each one if clicked on, takes you to the more detailed page displaying the various recipes we provide for you.
+For the `Landing component`, this is your first stop on our page as a user. From this Landing page, there's a 'carousel' medley of images, each one if clicked on, takes you to the more detailed list of Recipes page, displaying our various recipes and dishes.
 
 `Carousel` Component
-The `Carousel component` is one that 
+The `Carousel component` is to grab the user's attention with the imagery of 3 different recipe dishes, making the app more appealing and engaging.
 
 `Recipe` Component
-The `Recipe component` is the .
+The `Recipe component` is to display the details for individual recipes, for the user to add feedback and reviews, including 1-5 star ratings, country of origin, whether it's vegan, vegetarian or gluten-free, and is a huge part of the app, which for us, must have an inclusion of community.
 
 `Recipes` Component
-The `Recipes component` -- not to mixed up with the above 'Recipe' component, displays every single detail available per recipe: reviews, ingredients, different recipes, and is a breakdown of these details once the user clicks on each recipe.
+The `Recipes component` -- not to mixed up with the above 'Recipe' component, displays every recipe available, broken down by dish image, dish name and of course the recipe's list of ingredients.
 
 `Header` Component
-The `Header component` is up top, as its name suggests, on the landing page. It's the simplest component, carrying our header display title.
+The `Header component` is up top, as its name suggests, on the landing page. It's the simplest component, carrying our *recipEATS!* title/link and our 'About Us' link.
 
 `ReviewsForm` Component
-The `ReviewsForm` holds a separate file for each fetch. For the two functions, a fetch grabs all the recipe data, and another fetch grabs one recipe based on the ID.
+The `ReviewsForm` holds a separate file for each fetch. For the two functions, one fetch grabs all the recipe data, and another fetch grabs one recipe based on the ID.
 
 `RecipeDetails` Component
-Our `RecipeDetails component` gives the user a taste of some very entertaining details about the recipe. From their 'country of origin' to 'Spice Level' and from 'Meal Prep' time to  giving the user the option to 'Add review'. 
+Our `RecipeDetails component` works hand-in-hand with the `Recipes` component to give the user a taste of some very entertaining details about the recipe. From their 'country of origin' to 'Spice Level', and from 'Meal Prep' time to  giving the user the option to even 'Add review'. 
 
 ### Routing
 We used (5) Routes for the following files below:
@@ -97,13 +97,13 @@ We used (5) Routes for the following files below:
 #### Bonus Items
 Stretch Goals:
 
--A fun option to invite a user, enabling them on our site/app to input their own recipes, according to the same object structure of our `recipes` data-point.
-
--Reviews or comments from the user on any recipe resource that persists in JSON server.
+-Reviews or comments or ratings are options for any user to do  for any recipe resource that persists in JSON server, making our app more interactive.
 
 -Most, if not all our images, are stored and uploaded in a Cloudinary account, owned by one of our squad members: Marlon. 
 
 -Sorting and searching for data, filtering it down to maybe a few handful of recipes, based on an ingredient(s) to be excluded.
+
+-Specific filter buttons -- `Vegan`, `Vegetarian` and `Gluten-Free` really cater to our user-base of very picky eaters.
 
 #### Contributing
 Contributions: 
@@ -142,24 +142,24 @@ Submit a pull request.
 
 ## TWO (2) User Personas:
 
-(1) Here's **Alex**, he's a dessert fiend, but absolutely can't have any recipe that includes sugar, which for sweetness, could be replaced with the following: agave, honey, or coconut shavings/flakes. He's on the right site and app for his sweet-tooth cravings, with our recipEATS!
+(1) Here's **Alex**, he's a dessert fiend, but absolutely can't have any recipe that includes sugar, which for sweetness, could be replaced with the following: agave, honey, or coconut shavings/flakes. He's on the right site for his sweet-tooth cravings, with our recipEATS app!
 
 (2) Very different to Alex, is **Jennifer**. She's OK with a lil' brown, or even white sugar in her life, but she's absolutely allergic to gluten. So the term 'gluten-free' is her friend, where it helps her avoid ingredients which include flour, wheat (& its derivatives), rye, barley, malt, and more.
 
 ## Heaven Seven Group Dynamic
 *Marlon Regis* - marlonregis@pursuit.org
-Coming into this already-established team, I wasted no time in trying to gel together with my new squad, of whom Lenny is also a 'transfer' and new team-member. Walked squad member Haiyah in our `wireframe.cc` designed wireframes; contributed data for our manual API using my creativity and ChatGPT, with entries for our `Recipes` and `Reviews` data-points for our object structure; manned this `Readme.md` file from start to finish; navigated together w/Tim, the code for functionality in the `Recipes` component file; provided daily organizational updates in `Trello Board`; and set-up zoom on weekend for squad-time (w/Dan) for any blockers, which we had re `Carousel` component functionality.
+Coming into this already-established team, I wasted no time in trying to gel together with my new squad, of whom Lenny is also a 'transfer' and new team-member. Walked squad member Haiyah in our `wireframe.cc` designed wireframes; contributed data for our manual API using my creativity and ChatGPT, with entries for our `Recipes` and `Reviews` data-points into our object structure; manned this `Readme.md` file as well as our `slides` presentation using the  "Tome" platform, from start to finish; navigated together w/Tim, the code for functionality in the `Recipes` component file; provided daily organizational updates in `Trello Board`; and set-up zoom on weekend for squad-time (w/Dan) for any blockers, which we had re `Carousel` component functionality.
 
 *Lenny Lopez* - lennylopez@pursuit.org
-A role of wearing many hats, Lenny really stepped up in his role and approach to style our `Landing page`, working together with Haiyah and Tim. Lenny also worked with Haiyah on the `Recipe.jsx` component. Even shifted and moved the `About Us` link on the Landing page, away from being too noticeable near to the header.
+A role of wearing many hats, Lenny really stepped up in his role and approach to style our `Landing page`, working together with Haiyah and Tim. Lenny also worked with Haiyah on the `Recipe` component. His input and ideas to shift and move the `About Us` link around from its original position on the Landing page, away from being too noticeable near the header, was crucial. 
 
 *Haiyah Perez* - haiyahperez@pursuit.org
-Haiyah, one of the original 'Heaven Seven' members, worked by starting off in the `About Us` page and `Landing page`, as well as built the majority of code for functionality in the `Recipe.jsx`file. She also spent a few days figuring out the functionality using outside libraries pertaining to the `carasoul component` just to make us all look good, anytime a user stumbles upon our Landing Page.
+Haiyah, one of the original 'Heaven Seven' members, worked by starting off in the `About Us` page and `Landing page`, as well as built the majority of code for functionality in the `Recipe`component. She also spent a few days figuring out the functionality using outside libraries pertaining to the `carasoul component` -- one of her many ideas, to make us all look good. A great first impression anytime a user stumbles upon our Landing Page? ✅!
 
 *Timothy Natal* - timothynatal@pursuit.org
-Last, but certainly not least, Tim's role was an integral one for the squad, as the recipEATS! app is his brainchild. He tested and built the code in most components, including the `Recipes` component that myself and Tim worked on together. Again, there isn't much Tim didn't do. He's the part human, part AI filter function, working on CSS files across the board, and especially the `App.jsx` file. He's worked on the `ReviewsForm` and `RecipeDetails` components and chipping away at any ideas that may fit into the 'stretch goals' category.
+Last, but certainly not least, Tim's role was an integral one for the squad, as the recipEATS! app is his brainchild. He tested and built the code in most components, including the `Recipes` component that myself and Tim worked on together. Again, there isn't much Tim didn't do. He's the part human, part AI filter function, working on CSS files across the board, deployed frontend and backend links, and also tirelessly worked in the `App.jsx` file. He built and created the `ReviewsForm`, `ReviewsEditForm` and `RecipeDetails` components, chipping away at any ideas that may fit into our 'stretch goals' category.
 
-As a group, Haiyah and Tim were already the original personnel of 'Heaven Seven', whilst Lenny and myself, Marlon were the recent infiltrators. Overall, we got along, and daily we were pretty much engaged to the tasks at hand. A warning: don't ever work on a recipes/food app, without having a proper meal on your stomach! Anyway, the idea for the app was Tim's. Here's our `Team Norms` link: https://docs.google.com/document/d/1FETAEXKfVJviGIdRROPBv5K7-wRZFbXqEYB6R62w6Z0/edit
+As a group, Haiyah and Tim were already the original personnel of 'Heaven Seven', whilst Lenny and myself, Marlon, were the recent 'infiltrators' haa! Overall, we got along, and we were pretty much engaged with each other daily, tackling the tasks at hand. A warning: don't ever work on a recipes/food app, without having a proper meal on your stomach! Anyway, the idea for the app was Tim's. Here's our `Team Norms` link: https://docs.google.com/document/d/1FETAEXKfVJviGIdRROPBv5K7-wRZFbXqEYB6R62w6Z0/edit
 
 **Set Up Instructions**
 # Deploying Frontend on Netlify:
@@ -206,8 +206,7 @@ Render will deploy your backend and provide a URL.
 After deploying (*frontend* + *backend*), ensure to test your app thoroughly.
 
 #### Visual Examples
-The following is an example of our application during the process w/these images showing the application completed at different stages of the project. Images highlight different stages of us tackling this recipEATS! project.
-
+The following is an example of our application being built at different stages, while tackling this recipEATS! project. Here are just a few images showing our process.
 WIREFRAMES (desktop and mobile)
 
 <img src="https://res.cloudinary.com/dgifdj6nx/image/upload/v1706898185/Screenshot_2024-02-01_at_10.51.48_PM_mm2kee.png" alt="Landing-desktop" width="400" height="400">
@@ -220,7 +219,7 @@ WIREFRAMES (desktop and mobile)
 
 <img src="https://res.cloudinary.com/dgifdj6nx/image/upload/v1706898715/Screenshot_2024-02-01_at_11.14.11_PM_jlchzk.png" alt="recipes-mobile" width="400" height="400">
 
-recipEATS! (visuals throughout the process)
+recipEATS! (preliminary process: landing page, recipe page)
 
 <img src="https://res.cloudinary.com/dgifdj6nx/image/upload/v1707157477/Screenshot_2024-02-05_at_1.18.03_PM_xqoaqa.png" alt="Landing page 1" width="400" height="400">
 
@@ -236,12 +235,16 @@ recipEATS! (visuals throughout the process)
 *Haiyah Perez*: "I'm a multi-talented artist who finds joy in expressing creativity through various mediums. Whether it's bringing ideas to life on canvas through drawing and painting or molding intricate sculptures from clay, I love exploring the endless possibilities of artistic expression."
 (https://github.com/haiyahperez)
 
-*Lenny Lopez*: "I'm first generation-born in the US, in my family."
+*Lenny Lopez*: "I'm first generation-born in the US in my family."
 (https://github.com/notmenopecode)
 
 *Marlon Regis*: "In a different space, my 'name' IS one of the dishes in our recipe app!"
 (https://github.com/MarlonPelau)
 
-**Frontend deployment - our netlify.com link**:
+## DEPLOYMENT & SLIDE LINKS
 
-**Backend deployment - our render.com link**:
+**Frontend deployment - our netlify.com link**: https://recipeats.netlify.app/recipes
+
+**Backend deployment - our render.com link**: https://react-recipeats-backend.onrender.com/api/
+
+**Slide Presentation - our tome.app link**: <button><a href="https://tome.app/heaven-7even/recipeats-app-presentation-cls9atn38018cmu6b6z2rf05t">PLAY!</a></button>
