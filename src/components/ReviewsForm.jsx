@@ -48,15 +48,15 @@ export default function ReviewsForm(){
                 <form className="review-form" onSubmit={handleSubmit}>
                     <label htmlFor="reviewerName">
                         Name
-                        <input type="text" id="name" name="reviewerName" value={review.name} onChange={handleChange}/>
+                        <input type="text" id="name" name="reviewerName" value={review.name} onChange={handleChange} required/>
                     </label>
                     <label htmlFor="comment">
                         Comment
-                        <input type="text" id="comment" name="comment" value={review.comment} onChange={handleChange} />
+                        <input type="text" id="comment" name="comment" value={review.comment} onChange={handleChange} required/>
                     </label>
                     <label htmlFor="rating">
                         Rating: Must be number between 1-5
-                        <input type="text" id="rating" name="rating" value={review.rating} onChange={handleChange} />
+                        <input type="number" min="1" max="5" id="rating" name="rating" value={review.rating} onChange={handleChange} required/>
                     </label>
                     <button>Submit Review</button>
                 </form>

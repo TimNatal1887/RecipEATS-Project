@@ -79,3 +79,8 @@ ul{
 .reviews h3{
     color: black;
 }
+
+.delete-button{
+    margin-right: 10px;
+    margin-left: 10px;
+}
