@@ -83,9 +83,9 @@ export default function RecipeDetails(){
                                     <li key={review.id}>
                                         <p>{review.name} says: {review.comment}</p>
                                         <p>Rating: {"⭐️".repeat(review.rating)}
-                                        <button onClick={()=>handleDeleteReview(review.id)}>Remove</button>
+                                        <button className="delete-button" onClick={()=>handleDeleteReview(review.id)}>Remove</button>
                                         <Link to={`/recipes/${id}/review/${review.id}/edit`}>
-                                        <button>Edit</button>
+                                        <button className="edit-button">Edit</button>
                                         </Link>
                                         </p>
                                     </li>
