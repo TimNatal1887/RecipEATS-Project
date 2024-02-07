@@ -1,4 +1,4 @@
-###recipEATS! Project (Heaven Seven)
+### recipEATS! Project (Heaven Seven)
 
 <img src="https://res.cloudinary.com/dgifdj6nx/image/upload/t_Gradient fade/v1706806166/recipEATS-LandingPage1_d6ojpf.avif" alt="recipEATS!" width="400" height="400">
 
