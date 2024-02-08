@@ -64,22 +64,6 @@
     color: #777;
   }
   
-  /* Get Started Button */
-  .get-started-button {
-    background-color: #4caf50;
-    color: #fff;
-    border: none;
-    padding: 15px 30px;
-    font-size: 1.2em;
-    border-radius: 5px;
-    text-decoration: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-  }
-  
-  .get-started-button:hover {
-    background-color: #45a049;
-  }
   
   .toggle-label{
     width: 100px;
@@ -87,4 +71,10 @@
 
   .toggle-wrapper{
     display: flex;
+  }
+
+  @media (max-width:1050px){
+    .recipe-list-wrapper ul{
+      grid-template-columns: 1fr;
+    }
   }
